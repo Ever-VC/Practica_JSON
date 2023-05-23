@@ -1,0 +1,15 @@
+body {
+    background: linear-gradient(to left, #41295a, #2F0743);
+}
+
+h1, h2, .hr {
+    color: white;
+}
+
+p {
+    color: darkslategray;
+}
+
+span {
+    color: steelblue;
+}
