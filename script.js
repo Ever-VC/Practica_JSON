@@ -11,9 +11,11 @@ request.responseType = 'json';
 request.send();//Envia la peticion.
 
 import datosEscuadron from "./escuadron.js";//Importa la funcion para mostrar los datos.
+import mostrarHeroes from "./mostrarHeroes.js";
 
 //Una vez que se cargue la respuesta, podemos utilizar los datos.
 request.onload = function() {
     const heroes = request.response;
     datosEscuadron(heroes);//Envía como parámetros los datos para mostrarlos.
+    mostrarHeroes(heroes);
 }
